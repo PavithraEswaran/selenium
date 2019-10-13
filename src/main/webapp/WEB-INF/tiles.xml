@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/jsp/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/jsp/header.jsp" />  
+        <put-attribute name="category" value="/jsp/category.jsp" />  
+        <put-attribute name="body" value="" />   
+    </definition>  
+    <definition name="categoryDisplay" extends="base.definition">  
+        <put-attribute name="title" value="Category Display page" />  
+        <put-attribute name="body" value="/jsp/categoryDisplay.jsp" />  
+    </definition>  
+  
+     <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home Page" />  
+        <put-attribute name="body" value="/jsp/home.jsp" />  
+    </definition>  
+     
+     <definition name="Question" extends="base.definition">  
+        <put-attribute name="title" value="Question Post Page" />  
+        <put-attribute name="body" value="/jsp/Question.jsp" />  
+    </definition>
+    
+    <definition name="Answer" extends="base.definition">  
+        <put-attribute name="title" value="Answer Post Page" />  
+        <put-attribute name="body" value="/jsp/Answer.jsp" />  
+    </definition> 
+    
+    <definition name="editQuestion" extends="base.definition">  
+        <put-attribute name="title" value=" Edit Question Page" />  
+        <put-attribute name="body" value="/jsp/editQuestion.jsp" />  
+    </definition>
+    
+    <definition name="editAnswer" extends="base.definition">  
+        <put-attribute name="title" value="Edit Answer Page" />  
+        <put-attribute name="body" value="/jsp/editAnswer.jsp" />  
+    </definition> 
+    
+    <definition name="MyProfile" extends="base.definition">  
+        <put-attribute name="title" value="MyProfile Page" />  
+        <put-attribute name="body" value="/jsp/MyProfile.jsp" />  
+    </definition>
+    
+    <definition name="AllProfile" extends="base.definition">  
+        <put-attribute name="title" value="AllProfile Page" />  
+        <put-attribute name="body" value="/jsp/AllProfile.jsp" />  
+    </definition> 
+    
+    <definition name="Admin" extends="base.definition">  
+        <put-attribute name="title" value="Admin Page" />  
+        <put-attribute name="body" value="/jsp/Admin.jsp" />  
+    </definition>  
+    <definition name="MyAnswers" extends="base.definition">  
+        <put-attribute name="title" value="MyAnswer Page" />  
+        <put-attribute name="body" value="/jsp/MyAnswers.jsp" />  
+    </definition> 
+    
+    <definition name="MyQuestions" extends="base.definition">  
+        <put-attribute name="title" value="MyQuestions Page" />  
+        <put-attribute name="body" value="/jsp/MyQuestions.jsp" />  
+    </definition> 
+</tiles-definitions>  
